@@ -1,17 +1,17 @@
 # AI full-stack assessment
 
-The purpose of this assessment is to add a chatbot interface to an existing application enabling a user to retrieve satellite images based on their content. The user should be able to type in queries like "tell me which images have harbours in them?" and the interface will return a textual answer with links to the images.
+The purpose of this assessment is to add a chatbot interface to an existing application. The chatbot should enable a user to find and select satellite images based on their content, using natural language queries. As an example, the user asks "find all images with harbours in them?" and the interface returns a textual answer with links to the images.
 
-The images are available in a public bucket. It will be provided to the candidate with the link to the assessment. A background process should analyse all images in the S3 bucket.
+The images are available in a public bucket, which will be provided to the candidate at the time of the assessment. Before running the application, a background process should have analysed all images available in the S3 bucket.
 
-Fork this repository and add the following
-- a chatbot widget for natural language queries, using the existing React application
+Instructions: fork this repository and add the following
+- a chatbot widget, using the existing React application
 - a new API endpoint to handle the NL queries and responses, using the existing JAX-RS classes
 - a background process using the GeoRSClip model (or equivalent) to analyse all images in the S3 bucket. Link to the model https://huggingface.co/BiliSakura/GeoRSCLIP-ViT-H-14
 - all required services, such as vector DB, an LLM of your choice, etc... For the LLM, a suggestion is to use ollama with a free lightweight model.
 - updated instructions and documentation with diagrams on the system deployed
 
-The assessment will be rated on the quality of the implementation rather than the accuracy of the responses.
+The assessment will be rated on the quality of the implementation rather than the accuracy of the responses. It should be possible to run the solution on a standard computer.
 
 ---
 
