@@ -8,7 +8,7 @@ Instructions: fork this repository and add the following
 - a chatbot widget, using the existing React application
 - a new API endpoint to handle the NL queries and responses, using the existing JAX-RS classes
 - a background process using the GeoRSClip model (or equivalent) to analyse all images in the S3 bucket. Link to the model https://huggingface.co/BiliSakura/GeoRSCLIP-ViT-H-14
-- all required services, such as vector DB, an LLM of your choice, etc... For the LLM, a suggestion is to use ollama with a free lightweight model.
+- all required services, such as vector DB, an LLM of your choice, etc... For the LLM, a suggestion is to use ollama with a free lightweight model or some cheap off the shelf API solution.
 - updated instructions and documentation with diagrams on the system deployed
 
 The assessment will be rated on the quality of the implementation rather than the accuracy of the responses. It should be possible to run the solution on a standard computer.
